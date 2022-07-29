@@ -124,7 +124,7 @@ img {
   z-index: 100;
 }
 
-/* nav and stickly class at the same time */
+/* nav and sticky class at the same time */
 .nav.sticky {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
@@ -672,5 +672,97 @@ h4 {
   font-size: 1.5rem;
   font-weight: 400;
   
+
+}
+@media (max-width: 600px) {
+  h1{
+    display: block;
+   
+    padding: 50px;
+  }
+
+  h4{
+    display: block;
+    font-size: 22px;
+  }
+  
+  .nav.sticky{
+    display: none;
+  }
+  .nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0px 0px;
+    width:90%
+  }
+
+  .nav__links {
+    display: flex;
+    align-items:  left;
+    justify-content:  space-between;
+   
+  }
+
+  .nav {
+    display: flex;
+    align-items:  center;
+    justify-content:  center;
+    flex-wrap: wrap;
+    
+  }
+  .header__title{
+    display: flex;
+    align-items:  center;
+    justify-content:  center;
+    flex-wrap: wrap;
+  }
+ .header__img{
+  display:none;
+ }
+  .btn--scroll-to{
+    display:none
+  }
+
+ .features{
+  display: table-row-group;
+  align-items:  center;
+  justify-content:  center;
+  
+
+ }
+ .features__img{
+  display:none
+ }
+ .features__feature{
+  display: block;
+  padding-bottom: 20px;
+  width: 100%;
+ 
+ }
+ .features__icon{
+  margin: 10px;
+ }
+ .section{
+  padding: 50px 50px 50px 50px;
+ }
+
+ .testimonial__text{
+  font-size: 14px;
+ }
+ .testimonial__name{
+  font-size: 13px;
+
+ }
+ ::before{
+  display: none;
+ }
+
+ .footer__nav{
+  display: table-row;
+  align-items:  center;
+  justify-content:  center;
+  margin:0px
+ }
 
 }
